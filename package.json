@@ -11,8 +11,12 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^1.1.4",
     "@astrojs/svelte": "^1.0.1",
     "astro": "^1.4.0",
-    "svelte": "^3.46.4"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "svelte": "^3.46.4",
+    "typewriter-effect": "^2.19.0"
   }
 }

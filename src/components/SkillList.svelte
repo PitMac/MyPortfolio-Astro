@@ -156,15 +156,20 @@
     flex-wrap: wrap;
     margin-top: 10px;
   }
+
   .sectionItem {
-    color: var(--secondary-color);
+    color: var(--hover-color);
     list-style: none;
     padding-right: 15px;
     cursor: pointer;
     font-weight: bold;
   }
+  .sectionItem:hover {
+    color: var(--secondary-color);
+    transition: all 1s;
+  }
   .active {
-    color: aliceblue;
+    color: var(--secondary-color);
   }
   .skillSection {
     display: flex;

@@ -63,13 +63,6 @@
     padding-top: 30px;
   }
 
-  hr {
-    margin-top: 20px;
-    height: 2px;
-    background-color: var(--bg-color);
-    border: none;
-  }
-
   .contact button {
     transition: border 1s;
     background-color: transparent;

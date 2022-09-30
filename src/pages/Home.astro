@@ -1,6 +1,10 @@
 ---
+import BackgroundEffect from "../components/BackgroundEffect.astro";
+import TypeWriter from "../components/TypeWriter.jsx";
 import CV from "./../public/assets/CV.pdf";
 ---
+
+<BackgroundEffect />
 
 <div class="home" id="Home">
   <img
@@ -14,7 +18,7 @@ import CV from "./../public/assets/CV.pdf";
         Hi, I'm <span class="ColorText">Jhon PitMac</span>
       </h1>
       <h3 class="subtitle">
-        A <span class="colorText">FullStack</span> Developer
+        <span class="colorText idk"><TypeWriter client:load /></span>
       </h3>
       <section class="buttonsSection">
         <a href={CV} class="btn" download="CV"> CV</a>
@@ -27,6 +31,9 @@ import CV from "./../public/assets/CV.pdf";
 </div>
 
 <style>
+  .idk > div {
+    display: inline;
+  }
   .home {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -35,19 +42,11 @@ import CV from "./../public/assets/CV.pdf";
     height: 100vh;
   }
 
-  .ellipse {
-    position: absolute;
-    z-index: -1;
-    height: 100vh;
-  }
-
   .homeSection {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    --cursor-color: var(--secondary-color);
-    --cursor-width: 20px;
   }
 
   .imgLogo {

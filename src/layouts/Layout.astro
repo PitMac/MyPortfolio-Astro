@@ -20,7 +20,7 @@ const { title } = Astro.props;
     <style is:global>
       html {
         font-family: system-ui, sans-serif;
-        background-color: #1c1e26;
+        background-color: #111116;
       }
       code {
         font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
@@ -36,14 +36,18 @@ const { title } = Astro.props;
       }
 
       :root {
-        --primary-color: #16161e;
-        --secondary-color: #2196f3;
+        --primary-color: #111116;
+        --secondary-color: #1f8ee9;
         --text-color: #eeeeee;
         --bg-color: #393e46;
+        --hover-color: #2195f393;
       }
 
-      body {
-        background-color: var(--primary-color);
+      hr {
+        margin-top: 20px;
+        height: 2px;
+        background-color: var(--bg-color);
+        border: none;
       }
 
       ::-webkit-scrollbar {
@@ -62,7 +66,7 @@ const { title } = Astro.props;
 
       /* Handle on hover */
       ::-webkit-scrollbar-thumb:hover {
-        background: #2195f393;
+        background: var(--hover-color);
       }
 
       .title {
