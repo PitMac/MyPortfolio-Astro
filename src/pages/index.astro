@@ -1,11 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import About from "./About.astro";
 import Home from "./Home.astro";
+import NavBar from "./../components/NavBar.svelte";
+import Projects from "./Projects.astro";
+import Contact from "./Contact.svelte";
 ---
 
 <Layout title="Jhon PitMac">
   <main>
+    <NavBar client:load />
     <Home />
+    <About />
+    <Projects />
+    <Contact client:load />
   </main>
 </Layout>
 
