@@ -1,39 +1,39 @@
 // Projects
-import Ecovid from "/assets/projects/ecovid.webp";
-import FreeGames from "/assets/projects/freegamesapp.webp";
-import Anime from "/assets/projects/animeapp.webp";
-import DisneyC from "/assets/projects/disneyCharacters.webp";
-import Activity from "/assets/projects/activity.webp";
-import RunMD from "/assets/projects/runmd.webp";
-import PitKemon from "/assets/projects/pitkemon.webp";
-import RunFMD from "/assets/projects/RunFMD.webp";
+import Ecovid from "../../../public/assets/projects/ecovid.webp";
+import FreeGames from "../../../public/assets/projects/freegamesapp.webp";
+import Anime from "../../../public/assets/projects/animeapp.webp";
+import DisneyC from "../../../public/assets/projects/disneyCharacters.webp";
+import Activity from "../../../public/assets/projects/activity.webp";
+import RunMD from "../../../public/assets/projects/runmd.webp";
+import PitKemon from "../../../public/assets/projects/pitkemon.webp";
+import RunFMD from "../../../public/assets/projects/RunFMD.webp";
 import FreeGamesRN from "/assets/projects/FreeGamesRN.webp";
 
 // Tech
-let Flutter = "/assets/skills/flutter.svg";
-let React = "/assets/skills/react.svg";
-let Node = "/assets/skills/node.svg";
-let Svelte = "/assets/skills/svelte.svg";
-let Tauri = "/assets/skills/tauri.svg";
-let Astro = "/assets/skills/astro.svg";
-let Django = "/assets/skills/django.svg";
+import Flutter from "../../../public/assets/skills/flutter.svg";
+import React from "../../../public/assets/skills/react.svg";
+import Node from "../../../public/assets/skills/node.svg";
+import Svelte from "../../../public/assets/skills/svelte.svg";
+import Tauri from "../../../public/assets/skills/tauri.svg";
+import Astro from "../../../public/assets/skills/astro.svg";
+import Django from "../../../public/assets/skills/django.svg";
 
 // Languages
-let Javascript = "/assets/skills/languages/javascript.svg";
-let Dart = "/assets/skills/languages/dart.svg";
-let Typescript = "/assets/skills/languages/typescript.svg";
-let Python = "/assets/skills/languages/python.svg";
-let SQL = "/assets/skills/languages/sql.svg";
-let HTML = "/assets/skills/languages/html.svg";
-let CSS = "/assets/skills/languages/css.svg";
+import Javascript from "../../../public/assets/skills/languages/javascript.svg";
+import Dart from "../../../public/assets/skills/languages/dart.svg";
+import Typescript from "../../../public/assets/skills/languages/typescript.svg";
+import Python from "../../../public/assets/skills/languages/python.svg";
+import SQL from "../../../public/assets/skills/languages/sql.svg";
+import HTML from "../../../public/assets/skills/languages/html.svg";
+import CSS from "../../../public/assets/skills/languages/css.svg";
 
 // Tools
-let Git = "/assets/skills/tools/git.svg";
-let Postgres = "/assets/skills/tools/postgresql.svg";
-let Figma = "/assets/skills/tools/figma.svg";
-let Postman = "/assets/skills/tools/postman.svg";
-let MongoDB = "/assets/skills/tools/mongodb.svg";
-let TailwindCSS = "/assets/skills/tools/tailwind.svg";
+import Git from "../../../public/assets/skills/tools/git.svg";
+import Postgres from "../../../public/assets/skills/tools/postgresql.svg";
+import Figma from "../../../public/assets/skills/tools/figma.svg";
+import Postman from "../../../public/assets/skills/tools/postman.svg";
+import MongoDB from "../../../public/assets/skills/tools/mongodb.svg";
+import TailwindCSS from "../../../public/assets/skills/tools/tailwind.svg";
 
 export const technologies = [
   {

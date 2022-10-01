@@ -3,7 +3,7 @@ import BackgroundEffect from "../../components/BackgroundEffect.astro";
 import Header from "../../components/Header.astro";
 import SkillItem from "../../components/SkillItem.svelte";
 import Layout from "../../layouts/Layout.astro";
-import { projects } from "./data";
+import { projects } from "./data.astro";
 
 export function getStaticPaths() {
   return projects.map((project) => {
