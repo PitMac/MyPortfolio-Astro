@@ -6,6 +6,8 @@ import DisneyC from "/assets/projects/disneyCharacters.webp";
 import Activity from "/assets/projects/activity.webp";
 import RunMD from "/assets/projects/runmd.webp";
 import PitKemon from "/assets/projects/pitkemon.webp";
+import RunFMD from "/assets/projects/RunFMD.webp";
+import FreeGamesRN from "/assets/projects/FreeGamesRN.webp";
 
 // Tech
 let Flutter = "/assets/skills/flutter.svg";
@@ -124,51 +126,111 @@ export const tools = [
 export const projects = [
   {
     id: 1,
-    href: "https://pitkemon.vercel.app/",
+    href: "https://github.com/PitMac/PitKemon-React",
+    page: "https://pitkemon.vercel.app/",
     src: PitKemon,
     alt: "PitKemon",
-    technologies: [technologies[0], tools[0], languages[2]],
+    technologies: [
+      technologies[0],
+      tools[0],
+      languages[2],
+      languages[4],
+      languages[5],
+    ],
+    readme:
+      "This is a website that shows the first 151 pokemon. From BULBASAUR to MEW. Discover them!",
   },
   {
     id: 2,
     href: "https://github.com/PitMac/FreeGames-App-Flutter",
     src: FreeGames,
     alt: "FreeGamesApp",
-    technologies: [technologies[1], languages[1], tools[3]],
+    technologies: [technologies[1], languages[1], tools[0]],
+    readme:
+      "This Flutter application shows the new and the best free games in cross-platforms like Windows, Android, Linux, MacOs and IOS.",
   },
   {
     id: 3,
-    href: "https://run-md.vercel.app/",
+    href: "https://github.com/PitMac/RunMd-Tauri",
+    page: "https://run-md.vercel.app/",
     src: RunMD,
     alt: "RunMD",
-    technologies: [technologies[0], technologies[6], languages[2]],
+    technologies: [
+      technologies[0],
+      technologies[6],
+      languages[2],
+      languages[4],
+      languages[5],
+    ],
+    readme:
+      "A markdown editor made with Tauri/ReactTS, can preview text, copy it and download it in md extension ready for use!",
   },
   {
     id: 4,
     href: "https://github.com/PitMac/ECovid-App-Flutter",
     src: Ecovid,
     alt: "Ecovid App",
-    technologies: [technologies[0], tools[0]],
+    technologies: [technologies[1], languages[1], tools[0]],
+    readme:
+      "It gathers information on covid cases that occurred in the pandemic, uses a public API and has a search engine by country.",
   },
   {
     id: 5,
-    href: "https://activityweb.vercel.app/",
+    href: "https://github.com/PitMac/ActivityWeb-React",
+    page: "https://activityweb.vercel.app/",
     src: Activity,
     alt: "Activity Page",
-    technologies: [technologies[0], tools[0]],
+    technologies: [
+      technologies[0],
+      tools[0],
+      languages[2],
+      languages[4],
+      languages[5],
+    ],
+    readme:
+      "Are you bored? NO PROBLEM with this website you can find any activity. Made with BoredAPI you can find alone activities or group activities",
   },
   {
     id: 6,
     href: "https://github.com/PitMac/Anime-App-Flutter",
     src: Anime,
-    alt: "AnimeApp",
-    technologies: [technologies[0], tools[0]],
+    alt: "Anime Search",
+    technologies: [technologies[1], languages[1], tools[0]],
+    readme:
+      "Do you like Anime? This is a application made with Flutter that shows all tranding anime, with a summary and popularity",
   },
   {
     id: 7,
-    href: "https://github.com/PitMac/Anime-App-Flutter",
+    href: "https://github.com/PitMac/DisneyCharacters-React",
+    page: "https://disney-characters.vercel.app/",
     src: DisneyC,
     alt: "DisneyC",
-    technologies: [technologies[0], tools[0]],
+    technologies: [
+      technologies[0],
+      tools[3],
+      tools[0],
+      languages[4],
+      languages[5],
+    ],
+    readme:
+      "Do you like Disney Universe? This is a page that shows all characters of disney movies, series and cartoons",
+  },
+  {
+    id: 8,
+    href: "https://github.com/PitMac/RunMD-Flutter-Desktop",
+    src: RunFMD,
+    alt: "RunFMD",
+    technologies: [technologies[1], languages[1], tools[0]],
+    readme:
+      "A markdown editor made with Flutter Desktop, can preview text and copy it",
+  },
+  {
+    id: 9,
+    href: "https://github.com/PitMac/FreeGame-App-RN",
+    src: FreeGamesRN,
+    alt: "FreeGamesRN",
+    technologies: [technologies[1], languages[1], tools[0]],
+    readme:
+      "This React Native application shows the new and the best free games in cross-platforms like Windows, Android, Linux, MacOs and IOS.",
   },
 ];
