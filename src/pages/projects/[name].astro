@@ -1,0 +1,49 @@
+---
+import Header from "../../components/Header.astro";
+import SkillItem from "../../components/SkillItem.svelte";
+import Layout from "../../layouts/Layout.astro";
+import { projects } from "./data";
+
+export function getStaticPaths() {
+  return projects.map((project) => {
+    return {
+      params: { name: project.alt.replace(/\s/g, "-").toLowerCase() },
+      props: { project },
+    };
+  });
+}
+const { name } = Astro.params;
+const { project } = Astro.props;
+---
+
+<Layout title={project.alt}>
+  <Header title={project.alt} />
+  <div class="container">
+    <section class="leftSection">
+      <img class="imgProject" src={project.src} alt={project.alt} />
+      <section class="techSection">
+        {project.technologies.map((tech) => <SkillItem skill={tech} />)}
+      </section>
+    </section>
+    <p>Post: {name}</p>
+    <p>Post: {project.href}</p>
+  </div>
+</Layout>
+
+<style>
+  .container {
+    width: 80vw;
+    margin: 20px auto;
+  }
+
+  .imgProject {
+    width: 30vw;
+    border: 2px solid var(--bg-color);
+    border-radius: 10px;
+  }
+
+  .techSection {
+    display: flex;
+    flex-wrap: wrap;
+  }
+</style>

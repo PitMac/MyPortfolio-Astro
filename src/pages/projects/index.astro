@@ -1,17 +1,14 @@
 ---
+import BackgroundEffect from "../../components/BackgroundEffect.astro";
+import Header from "../../components/Header.astro";
 import ProjectList from "../../components/ProjectList.astro";
 import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Projects - Jhon PitMac">
+  <BackgroundEffect />
   <div class="container">
-    <header class="header">
-      <a href="/">
-        <i class="fa-sharp fa-solid fa-circle-left fa-2x"></i>
-      </a>
-      <h1>Projects</h1>
-    </header>
-    <hr />
+    <Header title="Projects" />
     <section class="list">
       <ProjectList />
     </section>
@@ -19,25 +16,6 @@ import Layout from "../../layouts/Layout.astro";
 </Layout>
 
 <style>
-  .container {
-    color: aliceblue;
-  }
-  .header {
-    width: 80vw;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-  }
-  .fa-sharp {
-    margin: 0px 10px;
-    color: var(--secondary-color);
-  }
-  .fa-sharp:hover {
-    margin-right: 10px;
-    transition: all 1s;
-    color: var(--hover-color);
-  }
   .list {
     width: 100%;
     align-items: center;

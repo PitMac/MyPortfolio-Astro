@@ -34,6 +34,9 @@ const { title } = Astro.props;
           Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         scroll-behavior: smooth;
       }
+      *::selection {
+        background-color: var(--hover-color);
+      }
 
       :root {
         --primary-color: #111116;
@@ -99,6 +102,7 @@ const { title } = Astro.props;
         text-decoration: none;
         transition: border 1s;
         width: 190px;
+        background-color: var(--primary-color);
       }
 
       .btn:hover {

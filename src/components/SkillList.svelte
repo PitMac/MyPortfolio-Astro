@@ -1,25 +1,6 @@
 <script>
-  // Tech
-  let Flutter = "/assets/skills/flutter.svg";
-  let React = "/assets/skills/react.svg";
-  let Node = "/assets/skills/node.svg";
-  let Svelte = "/assets/skills/svelte.svg";
-  let Tauri = "/assets/skills/tauri.svg";
-
-  // Languages
-  let Javascript = "/assets/skills/languages/javascript.svg";
-  let Dart = "/assets/skills/languages/dart.svg";
-  let Typescript = "/assets/skills/languages/typescript.svg";
-  let SQL = "/assets/skills/languages/sql.svg";
-  let HTML = "/assets/skills/languages/html.svg";
-  let CSS = "/assets/skills/languages/css.svg";
-
-  // Tools
-  let Git = "/assets/skills/tools/git.svg";
-  let Postgres = "/assets/skills/tools/postgresql.svg";
-  let Figma = "/assets/skills/tools/figma.svg";
-  let Postman = "/assets/skills/tools/postman.svg";
-  let MySQL = "/assets/skills/tools/mysql.svg";
+  import { languages, technologies, tools } from "../pages/projects/data";
+  import SkillItem from "./SkillItem.svelte";
 
   const sections = ["Technologies", "Languages", "Tools"];
   let selectedSec = "Technologies";
@@ -27,78 +8,6 @@
   const changeSection = (selected) => {
     selectedSec = selected;
   };
-
-  const technologies = [
-    {
-      src: React,
-      alt: "ReactJS",
-    },
-    {
-      src: Flutter,
-      alt: "Flutter",
-    },
-    {
-      src: Svelte,
-      alt: "Svelte",
-    },
-    {
-      src: Node,
-      alt: "Node",
-    },
-    {
-      src: Tauri,
-      alt: "Tauri",
-    },
-  ];
-  const languages = [
-    {
-      src: Javascript,
-      alt: "Javascript",
-    },
-    {
-      src: Dart,
-      alt: "Dart",
-    },
-    {
-      src: Typescript,
-      alt: "Typescript",
-    },
-    {
-      src: HTML,
-      alt: "HTML",
-    },
-    {
-      src: CSS,
-      alt: "CSS",
-    },
-    {
-      src: SQL,
-      alt: "SQL",
-    },
-  ];
-
-  const tools = [
-    {
-      src: Git,
-      alt: "Git",
-    },
-    {
-      src: Postgres,
-      alt: "Postgres",
-    },
-    {
-      src: MySQL,
-      alt: "MySQL",
-    },
-    {
-      src: Figma,
-      alt: "Figma",
-    },
-    {
-      src: Postman,
-      alt: "Postman",
-    },
-  ];
 </script>
 
 <ul class="sectionNavigation">
@@ -114,38 +23,19 @@
 {#if selectedSec === "Technologies"}
   <ul data-aos="zoom-in-right" class="skillSection">
     {#each technologies as technology}
-      <li class="skillItem">
-        <img
-          title={technology.alt}
-          class="skillImg"
-          src={technology.src}
-          alt={technology.alt}
-        />
-        <p class="skillName">{technology.alt}</p>
-      </li>
+      <SkillItem skill={technology} />
     {/each}
   </ul>
 {:else if selectedSec === "Languages"}
   <ul data-aos="zoom-in" class="skillSection">
     {#each languages as language}
-      <li class="skillItem">
-        <img
-          title={language.alt}
-          class="skillImg"
-          src={language.src}
-          alt={language.alt}
-        />
-        <p class="skillName">{language.alt}</p>
-      </li>
+      <SkillItem skill={language} />
     {/each}
   </ul>
 {:else}
   <ul data-aos="zoom-in-left" class="skillSection">
     {#each tools as tool}
-      <li class="skillItem">
-        <img title={tool.alt} class="skillImg" src={tool.src} alt={tool.alt} />
-        <p class="skillName">{tool.alt}</p>
-      </li>
+      <SkillItem skill={tool} />
     {/each}
   </ul>
 {/if}
@@ -176,25 +66,6 @@
     flex-wrap: wrap;
     margin-top: 10px;
   }
-  .skillItem {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: white;
-    border: 1px solid var(--bg-color);
-    border-radius: 50px;
-    padding: 7px;
-    margin: 5px 5px 0 0;
-  }
-
-  .skillImg {
-    height: 30px;
-    margin: 0px 5px;
-  }
-
-  .skillName {
-    padding-right: 5px;
-  }
 
   @media (max-width: 1305px) {
     .sectionNavigation {
@@ -203,11 +74,6 @@
     }
     .skillSection {
       justify-content: center;
-    }
-  }
-  @media (max-width: 685px) {
-    .skillImg {
-      height: 30px;
     }
   }
 </style>

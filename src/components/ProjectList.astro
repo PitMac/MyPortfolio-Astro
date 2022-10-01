@@ -1,53 +1,19 @@
 ---
-import Ecovid from "/assets/projects/ecovid.webp";
-import FreeGames from "/assets/projects/freegamesapp.webp";
-import Anime from "/assets/projects/animeapp.webp";
-import DisneyC from "/assets/projects/disneyCharacters.webp";
-import Activity from "/assets/projects/activity.webp";
-import RunMD from "/assets/projects/runmd.webp";
-import PitKemon from "/assets/projects/pitkemon.webp";
-const projects = [
-  {
-    href: "https://pitkemon.vercel.app/",
-    src: PitKemon,
-    alt: "PitKemon",
-  },
-  {
-    href: "https://github.com/PitMac/FreeGames-App-Flutter",
-    src: FreeGames,
-    alt: "FreeGamesApp",
-  },
-  {
-    href: "https://run-md.vercel.app/",
-    src: RunMD,
-    alt: "RunMD",
-  },
-  {
-    href: "https://github.com/PitMac/ECovid-App-Flutter",
-    src: Ecovid,
-    alt: "Ecovid App",
-  },
-  {
-    href: "https://activityweb.vercel.app/",
-    src: Activity,
-    alt: "Activity Page",
-  },
-  {
-    href: "https://github.com/PitMac/Anime-App-Flutter",
-    src: Anime,
-    alt: "AnimeApp",
-  },
-];
+import { projects } from "../pages/projects/data";
+const { limit } = Astro.props;
+let projectsS = projects;
+if (limit) {
+  projectsS = projects.slice(0, 6);
+}
 ---
 
 <ul class="projects">
   {
-    projects.map((project) => (
+    projectsS.map((project) => (
       <li>
         <a
           class="projectItem"
-          target="_blank"
-          href={project.href}
+          href={`projects/${project.alt.replace(/\s/g, "-").toLowerCase()}`}
           data-aos="fade-up"
         >
           <img
@@ -90,10 +56,10 @@ const projects = [
     text-align: center;
     text-decoration: none;
     transition: all 1s;
+    background-color: var(--primary-color);
   }
 
   .projectItem:hover {
-    background-color: #0d304d36;
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
   }

@@ -1,6 +1,4 @@
 <script>
-  import Menu from "/assets/svgs/menu.svg";
-
   let navButton = false;
   const handleNav = () => {
     if (!navButton) {
