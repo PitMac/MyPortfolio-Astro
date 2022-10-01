@@ -7,7 +7,7 @@ import Activity from "../../../public/assets/projects/activity.webp";
 import RunMD from "../../../public/assets/projects/runmd.webp";
 import PitKemon from "../../../public/assets/projects/pitkemon.webp";
 import RunFMD from "../../../public/assets/projects/RunFMD.webp";
-import FreeGamesRN from "/assets/projects/FreeGamesRN.webp";
+import FreeGamesRN from "../../../public/assets/projects/FreeGamesRN.webp";
 
 // Tech
 import Flutter from "../../../public/assets/skills/flutter.svg";
