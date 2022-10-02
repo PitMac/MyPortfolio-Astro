@@ -17,21 +17,22 @@ import Svelte from "../../../public/assets/skills/svelte.svg";
 import Tauri from "../../../public/assets/skills/tauri.svg";
 import Astro from "../../../public/assets/skills/astro.svg";
 import Django from "../../../public/assets/skills/django.svg";
+import Spring from "../../../public/assets/skills/spring.svg";
 
 // Languages
 import Javascript from "../../../public/assets/skills/languages/javascript.svg";
 import Dart from "../../../public/assets/skills/languages/dart.svg";
 import Typescript from "../../../public/assets/skills/languages/typescript.svg";
-import Python from "../../../public/assets/skills/languages/python.svg";
+import Java from "../../../public/assets/skills/languages/java.svg";
+import Kotlin from "../../../public/assets/skills/languages/kotlin.svg";
 import SQL from "../../../public/assets/skills/languages/sql.svg";
-import HTML from "../../../public/assets/skills/languages/html.svg";
-import CSS from "../../../public/assets/skills/languages/css.svg";
+import HTMLCSS from "../../../public/assets/skills/languages/htmlcss.svg";
 
 // Tools
 import Git from "../../../public/assets/skills/tools/git.svg";
 import Postgres from "../../../public/assets/skills/tools/postgresql.svg";
 import Figma from "../../../public/assets/skills/tools/figma.svg";
-import Postman from "../../../public/assets/skills/tools/postman.svg";
+import Linux from "../../../public/assets/skills/tools/linux.svg";
 import MongoDB from "../../../public/assets/skills/tools/mongodb.svg";
 import TailwindCSS from "../../../public/assets/skills/tools/tailwind.svg";
 
@@ -57,8 +58,8 @@ export const technologies = [
     alt: "Astro",
   },
   {
-    src: Django,
-    alt: "Django",
+    src: Spring,
+    alt: "Spring",
   },
   {
     src: Tauri,
@@ -79,16 +80,12 @@ export const languages = [
     alt: "Typescript",
   },
   {
-    src: Python,
-    alt: "Python",
+    src: Java,
+    alt: "Java",
   },
   {
-    src: HTML,
-    alt: "HTML",
-  },
-  {
-    src: CSS,
-    alt: "CSS",
+    src: HTMLCSS,
+    alt: "HTML & CSS",
   },
   {
     src: SQL,
@@ -118,8 +115,8 @@ export const tools = [
     alt: "Figma",
   },
   {
-    src: Postman,
-    alt: "Postman",
+    src: Linux,
+    alt: "Linux",
   },
 ];
 
@@ -130,13 +127,7 @@ export const projects = [
     page: "https://pitkemon.vercel.app/",
     src: PitKemon,
     alt: "PitKemon",
-    technologies: [
-      technologies[0],
-      tools[0],
-      languages[2],
-      languages[4],
-      languages[5],
-    ],
+    technologies: [technologies[0], tools[0], languages[2], languages[4]],
     readme:
       "This is a website that shows the first 151 pokemon. From BULBASAUR to MEW. Discover them!",
   },
@@ -160,7 +151,6 @@ export const projects = [
       technologies[6],
       languages[2],
       languages[4],
-      languages[5],
     ],
     readme:
       "A markdown editor made with Tauri/ReactTS, can preview text, copy it and download it in md extension ready for use!",
@@ -180,13 +170,7 @@ export const projects = [
     page: "https://activityweb.vercel.app/",
     src: Activity,
     alt: "Activity Page",
-    technologies: [
-      technologies[0],
-      tools[0],
-      languages[2],
-      languages[4],
-      languages[5],
-    ],
+    technologies: [technologies[0], tools[0], languages[2], languages[4]],
     readme:
       "Are you bored? NO PROBLEM with this website you can find any activity. Made with BoredAPI you can find alone activities or group activities",
   },
@@ -205,13 +189,7 @@ export const projects = [
     page: "https://disney-characters.vercel.app/",
     src: DisneyC,
     alt: "DisneyC",
-    technologies: [
-      technologies[0],
-      tools[3],
-      tools[0],
-      languages[4],
-      languages[5],
-    ],
+    technologies: [technologies[0], tools[3], tools[0], languages[4]],
     readme:
       "Do you like Disney Universe? This is a page that shows all characters of disney movies, series and cartoons",
   },

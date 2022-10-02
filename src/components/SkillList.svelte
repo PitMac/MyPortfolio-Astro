@@ -21,19 +21,19 @@
   {/each}
 </ul>
 {#if selectedSec === "Technologies"}
-  <ul data-aos="zoom-in-right" class="skillSection">
+  <ul class="skillSection">
     {#each technologies as technology}
       <SkillItem skill={technology} />
     {/each}
   </ul>
 {:else if selectedSec === "Languages"}
-  <ul data-aos="zoom-in" class="skillSection">
+  <ul class="skillSection">
     {#each languages as language}
       <SkillItem skill={language} />
     {/each}
   </ul>
 {:else}
-  <ul data-aos="zoom-in-left" class="skillSection">
+  <ul class="skillSection">
     {#each tools as tool}
       <SkillItem skill={tool} />
     {/each}
